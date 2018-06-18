@@ -1,0 +1,13 @@
+<center>
+        <h3>Create a Schedule</h3>
+            <table>
+                    <tr><td>Detail</td><td>{{input value=value1}}</td></tr>
+                    <tr><td>Type</td><td>{{input value=value2}}</td></tr>
+                    <tr><td>Time</td><td>{{input value=value3}}</td></tr>
+                    <tr><td>Text</td><td>{{input value=value4}}</td></tr>                    
+                    <tr><td>Description</td><td>{{input value=value5}}</td></tr>
+                    <tr><td><button {{action "uploadData"}}>Upload</button></td></tr>
+                    <tr><td>{{schedule-register-inner action="modifySchedule"}}</td></tr>
+            </table>
+</center>
+{{yield}}

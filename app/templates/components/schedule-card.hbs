@@ -1,0 +1,13 @@
+<article class="listing" {{action 'toggle'}}>
+    <h3>{{card.title}}</h3>
+    <div class="detail"><span>{{card.nameboard}}</span></div>
+    <div class="detail"><span>{{card.timeset}}</span></div>
+    <div class="detail"><span>{{card.text}}</span></div>
+    <div class="detail"><span class=" {{if isExpanded "scheduler_hide"}}">{{card.description}}</span></div>
+    {{!-- <div class="detail">
+        <span {{action ''}}>{{input value=schedulerStartTime placeholder="start HH:MM" key-up=(action 'updateDisplayField')}}</span>&nbsp;
+        <span {{action ''}}>{{input value=timeInterval placeholder="interval MM" key-up=(action 'updateDisplayField')}}</span>
+        <span>{{displayField}}</span>
+    </div> --}}
+</article>
+{{yield}}

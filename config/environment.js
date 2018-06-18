@@ -16,7 +16,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    firebase: {
+      apiKey: "AIzaSyBaauf-Xl12XYx9dOHdLgvwPT6eDWDFVg4",
+      authDomain: "tutorial-9bd16.firebaseapp.com",
+      databaseURL: "https://tutorial-9bd16.firebaseio.com",
+      projectId: "tutorial-9bd16",
+      storageBucket: "tutorial-9bd16.appspot.com",
+      messagingSenderId: "160058072840"
+   },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -29,6 +36,9 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV['ember-cli-mirage']={
+      enabled: false
+    }
   }
 
   if (environment === 'test') {

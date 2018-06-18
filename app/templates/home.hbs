@@ -1,0 +1,18 @@
+
+{{time-counter title="Time Now" action='updateRecords' actionName="Update"}}
+{{#yield-example}}
+    This is the content for yield
+{{/yield-example}}
+<hr>
+<table style='width:100%'>
+    <tr>
+        <td>
+            {{#each model as |schedule|}}
+                {{scard-display shcard=schedule shdetails=schedule.details width="100%" action="editModel"}}
+            {{/each}}
+        </td>
+        <td>
+        </td>
+    </tr>
+</table>
+{{outlet}}

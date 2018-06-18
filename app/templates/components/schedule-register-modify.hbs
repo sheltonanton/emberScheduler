@@ -1,0 +1,13 @@
+<center>
+    <h3>Modify a Schedule</h3>
+            <table>
+                    <tr><td>Detail</td><td>{{input value=model.det}}</td></tr>
+                    <tr><td>Type</td><td>{{input value=model.details.name}}</td></tr>
+                    <tr><td>Time</td><td>{{input value=model.details.time}}</td></tr>
+                    <tr><td>Text</td><td>{{input value=model.details.text}}</td></tr>                    
+                    <tr><td>Description</td><td>{{input value=model.details.description}}</td></tr>
+                    <tr><td><button {{action "modifyData"}}>Modify</button></td></tr>
+                    <tr><td>{{schedule-register-modify-inner action="createSchedule"}}</td></tr>
+            </table>
+</center>
+{{yield}}

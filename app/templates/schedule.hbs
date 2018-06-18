@@ -1,0 +1,14 @@
+{{input value=value1}} - Name
+{{input value=value2}} - Size
+<button {{action "addCard"}}>Add Card</button><button {{action "findCard"}}>Find Card</button><button {{action "findCreatedRecord"}}>Find Created Record</button>
+<button {{action "addCreatedRecord"}}>Add Created Records</button>
+<br>
+{{model.dashboardName}}
+<ul>
+{{#each model.cards as |item|}}
+    <li>{{item.name}} - {{item.size}} <button {{action "deleteRecord" item.id}}>Delete</button><button {{action "permanentDelete" item.id}}>Persist</button><button {{action "destroyAction" item.id}}>Destroy</button></li>
+{{/each}}
+</ul>
+<br>
+<button {{action "persistDashboard"}}>Persist Dashboard</button><button {{action "relateCreatedRecord"}}>Relate Created Record</button>
+{{outlet}}

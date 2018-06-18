@@ -1,0 +1,7 @@
+<table style="width:100%;cursor:pointer;">
+    <tr>
+        <td><div {{action "createSchedule"}} style="border-color:black;background-color:{{if isCreate "#eeeeee"}};">Create a Schedule</div></td>
+        <td><div {{action "modifySchedule"}} style="border-color:black;background-color:{{if isModify "#eeeeee"}};">Modify a Schedule</div></td>
+    </tr>
+</table>
+{{yield}}

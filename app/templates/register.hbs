@@ -1,0 +1,22 @@
+{{time-counter title="Time Now"}}
+<hr>  
+{{#each model as |item|}}
+    {{item.name}}
+    {{item.comment}}
+    {{item.details.title}}
+    {{item.details.time}}
+    {{item.details.text}}
+    {{item.details.description}}
+{{/each}}
+<div style="margin:20px;">
+    {{schedule-register-header display=display create='createSchedule' modify='modifySchedule'}}
+    <div>
+        {{#if display}}
+            {{schedule-register action='modifySchedule' dataHandleAction='uploadData'}}
+        {{/if}}
+        {{#unless display}}
+            {{schedule-register-modify action='createSchedule' model=model}}
+        {{/unless}}
+    </div>
+</div>
+{{outlet}}

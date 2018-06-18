@@ -1,0 +1,14 @@
+<div style="width:{{width}};background-color:#eeeeee;">
+    <article class="listing">
+        <h3>{{shcard.det}}</h3>
+            <div class="detail">{{shdetails.name}}</div>
+        <div class="detail">{{shdetails.time}}</div>
+        <div class="detail">{{shdetails.text}}</div>
+        <div class="detail">{{shdetails.description}}</div>
+        {{#if displayEdit}}
+    <div class="detail"><button {{action "editModel" shcard.id}}>Edit</button></div>
+    {{/if}}
+    </article>
+    
+</div>
+{{yield}}
