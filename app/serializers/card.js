@@ -1,11 +1,6 @@
 import DS from 'ember-data';
 
-export default DS.RESTSerializer.extend(DS.EmbeddedRecordsMixin,{
-    attrs:{
-        dashBoardId:{
-            deserialize: 'records'
-        }
-    },
+export default DS.RESTSerializer.extend({
     normalizeResponse(store,primaryModelClass,payload,id,requestType){
         console.log("Inside normalizeResponse card.js");
         console.log("Payload: ");

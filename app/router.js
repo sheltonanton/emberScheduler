@@ -9,7 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('home');
   this.route('schedule');
-  this.route('manager');
+  this.route('manager', function() {});
   this.route('about');
   this.route('register');
   this.route('main');

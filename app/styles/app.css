@@ -1,0 +1,33 @@
+/*carousel */
+.image-carousel-flex-container{
+    display:flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+.carousel-left{
+    flex: 1 1 auto;
+    height: inherit;
+    margin: auto;
+}
+
+.carousel-center{
+    flex: 3 3 auto;
+    height: inherit;
+    margin: auto;
+}
+
+.carousel-right{
+    flex: 1 1 auto;
+    height: inherit;
+    margin: auto;
+}
+
+.carousel-arrow{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+}

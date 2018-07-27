@@ -1,0 +1,12 @@
+<form method={{form.method}} action={{form.action}}>
+    {{#each form.structure as |input|}}
+        {{#if (if-equal input.type "button")}}
+            <input type="button" value="Button">
+        {{/if}}
+        {{#if (if-equal input.type "radio")}}
+            {{#each input.meta as |item|}}
+                <input type="radio" value="{{item.value}}" id="{{item.id}}" name="{{item.name}}"><label for="{{item.id}}">{{item.label}}</label>
+            {{/each}}
+        {{/if}}
+    {{/each}}
+</form>

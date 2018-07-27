@@ -1,0 +1,4 @@
+{{#each groupItems as |item|}}
+    <input type="radio" id="{{item.id}}" name="{{groupName}}" value="{{item.value}}" checked="{{item.checked}}" onclick={{action "radioClicked" item.id}}/>
+    <label for="{{item.id}}">{{item.label}}</label>
+{{/each}}

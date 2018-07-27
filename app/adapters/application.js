@@ -4,15 +4,7 @@ export default DS.RESTAdapter.extend({
     // host:'https://my-json-server.typicode.com',
     // namespace: 'sheltonanton/rest'
     host:"http://localhost:3000",
-    namespace: '',
-    serialize(snapshot,options){
-        console.log("Inside application adapter");
-        console.log(snapshot);
-        console.log(options);
-        let ar = this._super(snapshot,options);
-        console.log(ar);
-        return ar;
-    }
+    namespace: ""
     // headers:{
     //     apiKey: "AIzaSyBaauf-Xl12XYx9dOHdLgvwPT6eDWDFVg4",
     //     authDomain: "tutorial-9bd16.firebaseapp.com",
@@ -22,3 +14,4 @@ export default DS.RESTAdapter.extend({
     //     messagingSenderId: "160058072840"
     // }
 });
+//http://localhost:3000/schedule

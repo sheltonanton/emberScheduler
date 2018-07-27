@@ -1,2 +1,14 @@
 
+{{!-- {{form-creator form=model.formData}} --}}
+{{!-- {{input type="radio" name="radios" onchange=(action 'radioClicked')}}
+{{input type="radio" name="radios"}}
+{{input type="radio" name="radios"}} --}}
+{{demo-component models=model}}
+{{checkbox-group}}
+
+<hr>
+<button {{action "clickedButton" 1}}>Button 1</button>
+<button {{action "clickedButton" 2}}>Button 2</button>
+<button {{action "clickedButton" 3}}>Button 3</button>
+<button {{action "clickedButton" 4}}>Button 4</button>
 {{outlet}}

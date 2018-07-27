@@ -1,0 +1,9 @@
+{{input type="text" value=value1}}
+<div>
+    {{#each lists as |item|}}
+        {{!-- {{input type="checkbox" name="checkbox-group" checked=item.checked}}  <label>{{item.name}}</label> --}}
+        {{item.name}}
+        {{item.checked}}
+        {{item.visible}}
+    {{/each}}
+</div>
